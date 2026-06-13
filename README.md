@@ -1,3 +1,6 @@
+# MiniShop REST API
+![CI Pipeline](https://github.com/iTovarr/Lab12_Pruebas-de-Integracion/actions/workflows/ci.yml/badge.svg)
+
 ## Evidencia del Laboratorio 12
 A continuación se muestra el resultado exitoso de la ejecución de las 14 pruebas de integración corriendo en verde:
 
