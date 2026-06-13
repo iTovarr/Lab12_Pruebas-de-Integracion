@@ -9,15 +9,18 @@ import java.util.List;
 public class ProductService {
     private final ProductRepository productRepository;
 
+    private static final double MINIMO_PRECIO_PERMITIDO = 0.0;
+    private static final int MINIMO_STOCK_PERMITIDO = 0;
+
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
     public Product save(Product product) {
-        if (product.getPrice() <= 0) {
+        if (product.getPrice() <= MINIMO_PRECIO_PERMITIDO) {
             throw new IllegalArgumentException("El precio debe ser mayor a cero");
-    }
-        if (product.getStock() < 0) {
+        }
+        if (product.getStock() < MINIMO_STOCK_PERMITIDO) {
             throw new IllegalArgumentException("El stock no puede ser negativo");
         }
         return productRepository.save(product);
