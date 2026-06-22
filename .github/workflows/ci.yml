@@ -42,7 +42,7 @@ jobs:
         run: >
           mvn sonar:sonar
           --no-transfer-progress
-          -Dsonar.projectKey=TU_PROJECT_KEY_DE_SONARCLOUD
+          -Dsonar.projectKey=c42bb38f1adf4ea213cc02bab5b8ee50fb86bf76
           -Dsonar.organization=${{ secrets.SONAR_ORG }}
 
       - name: 7 - Publicar reporte de pruebas
