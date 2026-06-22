@@ -12,7 +12,7 @@ jobs:
   build-and-test:
     name: Build, Pruebas y Análisis de Calidad
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: 1 - Checkout del código fuente
         uses: actions/checkout@v4
