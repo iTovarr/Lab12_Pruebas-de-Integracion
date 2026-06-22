@@ -6,7 +6,8 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.14</version>
-		<relativePath/> </parent>
+		<relativePath/>
+	</parent>
 	<groupId>com.tecsup</groupId>
 	<artifactId>minishop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -44,7 +45,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -75,7 +75,6 @@
 							<goal>prepare-agent</goal>
 						</goals>
 					</execution>
-
 					<execution>
 						<id>jacoco-report</id>
 						<phase>verify</phase>
@@ -83,7 +82,6 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
-
 					<execution>
 						<id>jacoco-report-xml</id>
 						<phase>verify</phase>
@@ -97,7 +95,6 @@
 							</formats>
 						</configuration>
 					</execution>
-
 					<execution>
 						<id>jacoco-check</id>
 						<phase>verify</phase>
@@ -120,6 +117,12 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.10.0.2594</version>
 			</plugin>
 
 			<plugin>
